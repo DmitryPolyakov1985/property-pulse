@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 
 function PropertyCard({ property }) {
+  console.log("property ", property);
   const getRateDisplay = () => {
     const { rates } = property;
 
@@ -20,6 +21,8 @@ function PropertyCard({ property }) {
       return `$${rates.nightly.toLocaleString()}/night`;
     }
   };
+
+  const imagePath = `/images/properties/${property.images[0]}`;
 
   return (
     <div className="rounded-xl shadow-md relative">
