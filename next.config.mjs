@@ -12,11 +12,6 @@ const nextConfig = {
         hostname: "res.cloudinary.com",
         pathname: "**",
       },
-      {
-        protocol: "https",
-        hostname: "cloudinary.com",
-        pathname: "**",
-      },
     ],
     domains: ["res.cloudinary.com"],
   },
