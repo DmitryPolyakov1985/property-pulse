@@ -9,7 +9,6 @@ import {
 } from "react-icons/fa";
 
 function PropertyCard({ property }) {
-  console.log("property ", property);
   const getRateDisplay = () => {
     const { rates } = property;
 
@@ -27,7 +26,7 @@ function PropertyCard({ property }) {
   return (
     <div className="rounded-xl shadow-md relative">
       <Image
-        src={`/images/properties/${property.images[0]}`}
+        src={property.images[0]}
         alt={property.name}
         width="0"
         height="0"
