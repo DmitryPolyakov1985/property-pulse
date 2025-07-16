@@ -23,4 +23,4 @@ async function PropertiesPage() {
   );
 }
 
-export default PropertiesPage;
+export default PropertiesPage;;;
