@@ -63,6 +63,8 @@ async function addProperty(formData) {
 
   propertyData.images = imageUrls;
 
+  console.log("propertyData ", propertyData);
+
   const newProperty = new Property(propertyData);
   await newProperty.save();
 
